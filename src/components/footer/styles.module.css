@@ -1,0 +1,32 @@
+.footer {
+  padding: 5rem 5rem 0 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.companyTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.companyDescription {
+  max-width: 300px;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    align-items: center;
+  }
+  .footerContent {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}

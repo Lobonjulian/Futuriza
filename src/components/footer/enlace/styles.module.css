@@ -1,0 +1,15 @@
+.navigationLinksList,
+.additionalLinksList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .navigationLinksList,
+  .additionalLinksList {
+    align-items: center;
+    padding-bottom: 1.5rem;
+  }
+}

@@ -1,0 +1,78 @@
+:root {
+  --primary-100: #04ddb2;
+  --primary-200: #00be95;
+  --primary-300: #00b990;
+  --accent-100: #00d8ff;
+  --accent-200: #00779b;
+  --text-100: #333333;
+  --text-200: #5c5c5c;
+  --bg-100: #ffffff;
+  --bg-200: #f5f5f5;
+  --bg-300: #cccccc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Feature Mono", monospace;
+  color: var(--text-100);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url("/logo.svg");
+  background-color: var(--bg-300);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Heat Robox", sans-serif;
+  line-height: 1.5;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-family: "Feature Mono", monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-100);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Heat Robox";
+  src: url("/font/heat-robox.otf");
+}
+
+@font-face {
+  font-family: "Feature Mono";
+  src: url("/font/featuremono.ttf");
+}

@@ -1,0 +1,26 @@
+.button {
+  background-color: plum;
+  box-shadow: 0 14px 80px -3px #844484;
+  transform: scale(1);
+  transition-property: background-color, box-shadow, transform;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: var(--primary-100);
+    transform: scale(1.2);
+  }
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (max-width: 425px) {
+  .list {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
