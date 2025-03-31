@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
 import VideoPresentation from "../../assets/video/presentacion.mp4";
 import HeroImg from "/futuriza.png";
+import styles from "../main/styles.module.css";
 
 const useVideo = () => {
   const videoContainer = useRef(null);
@@ -8,10 +9,9 @@ const useVideo = () => {
   useEffect(() => {
     const video = videoContainer.current;
     const thumb = document.createElement("div");
-    thumb.classList.add("heroVideo");
+    thumb.classList.add(styles.heroVideo);
     thumb.innerHTML = `
-      <img src="${HeroImg}" alt="hero" />
-      <div class="play"></div>
+      <img src="${HeroImg}" alt="hero" >
     `;
     thumb.addEventListener("click", () => {
       const iframe = document.createElement("iframe");
